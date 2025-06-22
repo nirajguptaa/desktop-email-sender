@@ -4,13 +4,13 @@ async function sendEmail(to, subject, text) {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user:  process.env.EMAIL_USER,//change with gmail id
-      pass:  process.env.EMAIL_PASS // Your App Password (looks okay)
+      user:  process.env.EMAIL_USER,
+      pass:  process.env.EMAIL_PASS 
     }
   });
 
   const info = await transporter.sendMail({
-    from: '"Email Sender App" <EMAIL_USER>',//change with gmail id
+    from: '"Email Sender App" <EMAIL_USER>',
     to,
     subject,
     text
