@@ -26,11 +26,3 @@ A simple desktop app to send emails.
    npm start
    ```
 
-## Security
-
-- **Never share your `.env` file or credentials.**
-- The `.env` file is ignored by git via `.gitignore`.
-
-## License
-
-MIT
